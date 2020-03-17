@@ -1,8 +1,5 @@
 package com.pinnacle.interview.Entity;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class Receipt {
     private Item[] items;
     private String subtotal;
