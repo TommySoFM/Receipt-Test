@@ -2,26 +2,39 @@ package com.pinnacle.interview.Entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
-import static javax.persistence.GenerationType.IDENTITY;
 
 @Entity
 public class Item {
-
     @Id
-    @GeneratedValue(strategy = IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String product_type;
-    private String product_name;
+    private String name;
+    private int quantity;
+    private double price;
+    private String location;
 
-    //Constructor
-    public Item(){
+    // Constructors
+    public Item(){}
+    public Item(String name, int quantity, double price, String location){
+        this.name = name;
+        this. quantity = quantity;
+        this.price = price;
+        this.location = location;
     }
 
-    //Getters
-    public Integer getId() {return id;}
-    public String getProduct_type() {return product_type;}
-    public String getProduct_name() {return product_name;}
+    // Setters
+    public void setId(Integer id) {this.id = id;}
+    public void setName(String name) {this.name = name;}
+    public void setQuantity(int quantity) {this.quantity = quantity;}
+    public void setPrice(double price) {this.price = price;}
+    public void setLocation(String location) {this.location = location;}
 
+    // Getters
+    public Integer getId() {return id;}
+    public String getName() {return name;}
+    public int getQuantity() {return quantity;}
+    public double getPrice() {return price;}
+    public String getLocation() {return location;}
 }
