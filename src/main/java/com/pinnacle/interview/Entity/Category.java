@@ -12,16 +12,25 @@ public class Category {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private Integer id;
-    private String product_type;
-    private String product_name;
+    private String productType;
+    private String productName;
 
     //Constructor
     public Category(){
     }
+    public Category(String productType, String productName){
+        this.productType = productType;
+        this.productName = productName;
+    }
+
+    //Setters
+    public void setId(Integer id) {this.id = id;}
+    public void setProductType(String productType) {this.productType = productType;}
+    public void setProductName(String productName) {this.productName = productName;}
 
     //Getters
     public Integer getId() {return id;}
-    public String getProduct_type() {return product_type;}
-    public String getProduct_name() {return product_name;}
+    public String getProductType() {return productType;}
+    public String getProductName() {return productName;}
 
 }
