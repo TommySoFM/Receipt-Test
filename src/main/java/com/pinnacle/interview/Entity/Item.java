@@ -7,10 +7,11 @@ public class Item {
     private double price;
     private String location;
 
-    public Item(String name, int quantity, double price){
+    public Item(String name, int quantity, double price, String location){
         this.name = name;
         this.quantity = quantity;
         this.price = price;
+        this.location = location;
     }
 
     // Setters
