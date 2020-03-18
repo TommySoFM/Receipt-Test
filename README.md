@@ -35,9 +35,9 @@ The API has only one end-point:
 #### You can use API developing tools, [Postman](https://www.postman.com/ "Postman") for example,to send data to the API and get corresponding result.
 
 
-As data should be sent in JSON, please be sure to add headers `Content-Type: application/json` in request.  
+As data should be POST in JSON format, please be sure to add headers `Content-Type: application/json` in request.  
   
-The end-point accepts data in JSON format as below:
+The end-point accepts POST data in JSON format as below:
 ```
 [
   {	
