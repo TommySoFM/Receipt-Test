@@ -10,15 +10,15 @@ The test code is written in Java Spring RESTful structure, with following layers
 
 * `Controller`: To handle request and make response to client.
 
-- `Service`: Bussiness logics, would be called out by controller upon request.
+- `Service`: Holding bussiness logics, methods would be called out by controller upon request.
 
 - `Repository`: Create queries and handle results from database.
 
-- `Entity`: POJO, with getters and setters.
+- `Entity`: Data Transfer Object (with standard getters and setters).
 
 - `Database`: In-memory h2 database is adopted, as it is for only test purpose.
 
-* `Unit-testing`: Using Spring-boot testing module to confirm quality(correctness) of the code.
+* `Unit-testing`: Using Spring-boot testing module to ensure quality(correctness) of the code.
 
 ****
 
